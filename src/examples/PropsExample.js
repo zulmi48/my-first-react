@@ -1,7 +1,6 @@
 import React from 'react';
-import Card from './components/Card';
 
-function App(props) {
+function PropsExample(props) {
     return (
         <div className="py-4">
             <div className="container">
@@ -38,4 +37,5 @@ function App(props) {
     );
 }
 
-export default App;
+export default PropsExample;
+
