@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-function App(props) {
-
+function FetchingDataDinamis(props) {
     const [identifier, setIdentifier] = useState(1);
     const [user, setUser] = useState([])
     const [loading, setLoading] = useState(false)
@@ -52,7 +51,6 @@ function App(props) {
             </div>
         </div>
     );
-
 }
 
-export default App;
+export default FetchingDataDinamis;
