@@ -8,7 +8,7 @@ function Card(props) {
                 <h5>{props.content.title }</h5>
                 <small className="text-muted">{props.content.published}</small>
             </div>
-        </div>
+        </div> 
     );
 }
 

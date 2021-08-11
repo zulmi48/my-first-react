@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-function App(props) {
+function FetchingDataAPI(props) {
 
     const [users, setUsers] = useState([])
     const getUsers = async () => {
@@ -51,4 +51,4 @@ function App(props) {
 
 }
 
-export default App;
+export default FetchingDataAPI;
