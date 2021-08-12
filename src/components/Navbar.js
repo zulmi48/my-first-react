@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { UserProvider } from '../views/contexts/User';
+import AuthenticatedUser from './AuthenticatedUser';
 
 function Navbar({children}) {
     return (
@@ -11,7 +13,7 @@ function Navbar({children}) {
                     <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <NavLink exact className="nav-link" to="/" >Home</NavLink>
                             </li>
@@ -23,8 +25,18 @@ function Navbar({children}) {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/users" >Users</NavLink>
+                            </li>                            
+                            <li className="nav-item">
+                                
                             </li>
                         </ul>
+                        <span class="navbar-text">
+                            <NavLink className="nav-link" to="/" >
+                                <UserProvider>
+                                    <AuthenticatedUser />
+                                </UserProvider>
+                            </NavLink>
+                        </span>
                     </div>
                 </div>
             </nav>

@@ -1,9 +1,13 @@
 import React from 'react';
+import AuthenticatedUser from '../components/AuthenticatedUser';
+import { UserProvider } from './contexts/User';
 
 function Home(props) {
     return (
         <div className="container">
-            <h5>Home</h5>
+            <UserProvider>
+                <AuthenticatedUser />
+            </UserProvider>
         </div>
     );
 }
