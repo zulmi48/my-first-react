@@ -30,7 +30,7 @@ function FunctionExample() {
                                         <input value={lastname} onChange={(e) => setLastname(e.target.value)} type="text" name="lastname" id="lastname" className="form-control" />
                                     </div>
                                     <div className="d-grid gap-2">
-                                        <button type="submit" className="btn btn-blcok btn-primary">Show</button>
+                                        <button type="submit" className="btn btn-block btn-primary">Show</button>
                                     </div>
                                 </form>
                             </div>
