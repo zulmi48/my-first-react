@@ -6,6 +6,8 @@ import Contact from '../views/Contact'
 import NotFound from '../views/NotFound';
 import Navbar from '../components/Navbar';
 import Login from '../views/auth/Login';
+import Users from '../views/users';
+import ShowUser from '../views/users/Show';
 
 function Router(props) {
     return (
@@ -23,6 +25,16 @@ function Router(props) {
             <Route path="/contact">
                 <Navbar>
                     <Contact/>
+                </Navbar>
+            </Route>
+            <Route exact path="/users">
+                <Navbar>
+                    <Users/>
+                </Navbar>
+            </Route>
+            <Route path="/users/:identifier">
+                <Navbar>
+                    <ShowUser/>
                 </Navbar>
             </Route>
             <Route path='/login' component={Login} />
