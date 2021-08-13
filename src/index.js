@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
+import { RecoilRoot } from 'recoil'
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>    
+        <RecoilRoot>
+            <Suspense fallback={
+                <div className="container d-flex justify-content-sm-center">Laoding . . .</div>} >
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter> 
+            </Suspense>            
+        </RecoilRoot>           
     </React.StrictMode>,
   document.getElementById('root')
 );

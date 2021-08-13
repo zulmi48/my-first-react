@@ -5,7 +5,7 @@ const UserContext = createContext()
 const UserProvider = ({ children }) => {
     const [pengguna, setPengguna] = useState([])
     const getPengguna = async () => {
-        let response = await axios.get('https://jsonplaceholder.typicode.com/users/1')
+        let response = await axios.get('https://jsonplaceholder.typicode.com/users/5')
         setPengguna(response.data)
     }
 

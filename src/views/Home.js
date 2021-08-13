@@ -6,7 +6,9 @@ function Home(props) {
     return (
         <div className="container">
             <UserProvider>
-                <AuthenticatedUser />
+                <div className="d-flex">
+                    <span className="me-1">(Data dari Context) My Name is </span> <AuthenticatedUser />
+                </div>
             </UserProvider>
         </div>
     );
