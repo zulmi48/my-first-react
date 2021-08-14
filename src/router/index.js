@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import Login from '../views/auth/Login';
 import Users from '../views/users';
 import ShowUser from '../views/users/Show';
+import Theme from '../views/Theme';
 
 function Router(props) {
     return (
@@ -35,6 +36,11 @@ function Router(props) {
             <Route path="/users/:identifier">
                 <Navbar>
                     <ShowUser/>
+                </Navbar>
+            </Route>
+            <Route path="/theme">
+                <Navbar>
+                    <Theme/>
                 </Navbar>
             </Route>
             <Route path='/login' component={Login} />

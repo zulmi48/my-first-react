@@ -21,13 +21,13 @@ function Show(props) {
                     <div className="mb-2">
                         <NavLink className="btn btn-sm btn-secondary" to="/users">Back</NavLink>
                     </div>
-                    <div className="card">
+                    <div className="card text-black-50">
                         <div className="card-header"> {user.name} </div>
                         <div className="card-body">
-                            <div>{user.username}</div>                            
-                            <div>{user.phone} </div>
-                            <div>{user.website}</div>
-                            <div>{user.email}</div>
+                            <div>Username : {user.username}</div>                            
+                            <div>Phone : {user.phone} </div>
+                            <div>Website : {user.website}</div>
+                            <div>Email : {user.email}</div>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import AuthenticatedUser from '../components/AuthenticatedUser';
-import { UserProvider } from './contexts/User';
+import { UserProvider } from '../components/contexts/User';
 
 function Home(props) {
     return (

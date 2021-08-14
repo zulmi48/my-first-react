@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../views/contexts/User';
+import { UserContext } from './contexts/User';
+
 
 function AuthenticatedUser(props) {    
     const { pengguna } = useContext(UserContext)

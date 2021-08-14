@@ -26,7 +26,7 @@ function Users(props) {
                         return (
                             <div className="col-md-3" key={index}>
                                 <div className="card mb-2">
-                                    <div className="card-header"> {user.name} </div>
+                                    <div className="card-header text-center text-black-50"> {user.name} </div>
                                     <div className="card-body">
                                         <div className="mb-3">
                                             <a href={`http://${user.website}`} target="_blank" >{user.website}</a>  

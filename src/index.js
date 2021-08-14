@@ -11,7 +11,7 @@ ReactDOM.render(
     <React.StrictMode>
         <RecoilRoot>
             <Suspense fallback={
-                <div className="container d-flex justify-content-sm-center">Laoding . . .</div>} >
+                <div className="container d-flex justify-content-sm-center">Loading . . .</div>} >
                 <BrowserRouter>
                     <App />
                 </BrowserRouter> 
